@@ -34,9 +34,8 @@
                                 <%= certificate[i].description %>
                             </td>
                             <td>
-                                <img src=https://admin-portofolio.herokuapp.com/<%=certificate[i].imageUrl %>"
-                                alt="imageUrl"
-                                width="70px">
+                                <img src="https://admin-portofolio.herokuapp.com/<%=certificate[i].imageUrl %>"
+                                    alt="imageUrl" width="70px">
                             </td>
                             <td>
                                 <form action="/admin/certificate/<%= certificate[i].id %>?_method=DELETE" method="POST">
