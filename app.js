@@ -1,16 +1,18 @@
 var createError = require('http-errors');
 var express = require('express');
-const cors = require('cors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/db_portofolio', {
-  useNewUrlParser: true,
-});
 const methodOverride = require('method-override');
 const session = require('express-session');
 const flash = require('connect-flash');
+const cors = require('cors');
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://adinda:porto@cluster0.0urbw.mongodb.net/db_portofolio', {
+  useNewUrlParser: true
+});
+
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
